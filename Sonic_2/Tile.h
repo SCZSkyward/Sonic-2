@@ -1,5 +1,5 @@
 #pragma once
-#include <SDL_render.h>
+#include <SDL3/SDL_render.h>
 
 #define TILE_SIZE 16
 
