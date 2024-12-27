@@ -142,12 +142,16 @@
     <ClInclude Include="MetaTile.h" />
     <ClInclude Include="Zone.h" />
     <ClInclude Include="Tile.h" />
+    <ClInclude Include="SDL3/SDL.h" />
+    <ClInclude Include="SDL3/SDL_render.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="App.cpp" />
     <ClCompile Include="MetaTile.cpp" />
     <ClCompile Include="Zone.cpp" />
     <ClCompile Include="Tile.cpp" />
+    <ClInclude Include="SDL3/SDL.h" />
+    <ClInclude Include="SDL3/SDL_render.h" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Emerald_Hill.png" />
