@@ -4,31 +4,6 @@ on:
     branches:
       - master
 jobs:
-  sonic-2-build-x86:
-      runs-on: windows-2022
-      steps:
-        - name: Checkout
-          uses: actions/checkout@v2
-          with:
-            submodules: recursive 
-        - name: Setup MSBuild
-          uses: microsoft/setup-msbuild@v2
-        - name: Install SDL
-          run: |
-            vcpkg install sdl3 --triplet=x86-windows-static
-        - name: Build Sonic 2
-          run : |
-            msbuild "Sonic 2.sln" /p:Configuration=Release /p:Platform=Win32
-        - name: Move artifacts
-          run: |
-            mkdir artifacts
-            move ./build/Win32/Release/* ./artifacts 
-            move ./build/Win32/Release/* ./artifacts
-        - name: Upload artifacts
-          uses: actions/upload-artifact@v4
-          with:
-            name: sonic-2-build-x86
-            path: artifacts
   sonic-2-build-x64:
       runs-on: windows-2022
       steps:
