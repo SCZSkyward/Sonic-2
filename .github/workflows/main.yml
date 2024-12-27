@@ -15,7 +15,7 @@ jobs:
           uses: microsoft/setup-msbuild@v2
         - name: Install SDL
           run: |
-            vcpkg install sdl2 --triplet=x86-windows-static
+            vcpkg install sdl3 --triplet=x86-windows-static
         - name: Build Sonic 2
           run : |
             msbuild "Sonic 2.sln" /p:Configuration=Release /p:Platform=Win32
@@ -40,7 +40,7 @@ jobs:
           uses: microsoft/setup-msbuild@v2
         - name: Install SDL
           run: |
-            vcpkg install sdl2 --triplet=x64-windows-static
+            vcpkg install sdl3 --triplet=x64-windows-static
         - name: Build Sonic 2
           run : |
             msbuild "Sonic 2.sln" /p:Configuration=Release /p:Platform=x64
