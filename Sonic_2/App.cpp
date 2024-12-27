@@ -1,5 +1,5 @@
 #include "App.h"
-#include <SDL_image.h>
+#include <SDL3/SDL_image.h>
 
 
 App::App()
