@@ -1,6 +1,6 @@
 #pragma once
 
-#include <SDL3/SDL.h>
+#include <SDL3/include/SDL.h>
 #include <map>
 #include <vector>
 #include "Zone.h"
